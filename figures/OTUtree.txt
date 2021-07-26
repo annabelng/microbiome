@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="OTU_206 <= 0.5\ngini = 0.38\nsamples = 3104\nvalue = [2311, 793]\nclass = Not Preterm"] ;
+1 [label="OTU_1029 <= 5.5\ngini = 0.363\nsamples = 3029\nvalue = [2308, 721]\nclass = Not Preterm"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="OTU_21 <= 3.5\ngini = 0.352\nsamples = 2987\nvalue = [2306, 681]\nclass = Not Preterm"] ;
+1 -> 2 ;
+3 [label="OTU_1393 <= 24.5\ngini = 0.329\nsamples = 2804\nvalue = [2223, 581]\nclass = Not Preterm"] ;
+2 -> 3 ;
+4 [label="gini = 0.307\nsamples = 2694\nvalue = [2183, 511]\nclass = Not Preterm"] ;
+3 -> 4 ;
+5 [label="gini = 0.463\nsamples = 110\nvalue = [40, 70]\nclass = Preterm"] ;
+3 -> 5 ;
+6 [label="OTU_665 <= 0.5\ngini = 0.496\nsamples = 183\nvalue = [83, 100]\nclass = Preterm"] ;
+2 -> 6 ;
+7 [label="gini = 0.475\nsamples = 126\nvalue = [77, 49]\nclass = Not Preterm"] ;
+6 -> 7 ;
+8 [label="gini = 0.188\nsamples = 57\nvalue = [6, 51]\nclass = Preterm"] ;
+6 -> 8 ;
+9 [label="OTU_187 <= 20.0\ngini = 0.091\nsamples = 42\nvalue = [2, 40]\nclass = Preterm"] ;
+1 -> 9 ;
+10 [label="gini = 0.0\nsamples = 40\nvalue = [0, 40]\nclass = Preterm"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Not Preterm"] ;
+9 -> 11 ;
+12 [label="OTU_260 <= 3.0\ngini = 0.077\nsamples = 75\nvalue = [3, 72]\nclass = Preterm"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="OTU_1131 <= 0.5\ngini = 0.027\nsamples = 73\nvalue = [1, 72]\nclass = Preterm"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 72\nvalue = [0, 72]\nclass = Preterm"] ;
+13 -> 14 ;
+15 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Not Preterm"] ;
+13 -> 15 ;
+16 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Not Preterm"] ;
+12 -> 16 ;
+}
